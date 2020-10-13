@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        var a = "Este string es nuestra base string de trabajo";
+
+        // indexOf
+        var b = a.indexOf("string", 10);
+        // lastIndexOf
+        var c = a.lastIndexOf("string", 10);
+        // search
+        var d = a.search("string");
+        // slice
+        var e = a.slice(0, 11);
+        // substring
+        var f = a.substring(0);
+        // substr
+        var g = a.substr(5, 6);
+        // replace
+        var h = a.replace(/string/g, "libro");
+        // toUpperCase
+        var i = a.toUpperCase();
+        // toLowerCase
+        var j = a.toLowerCase();
+        // concat
+        var k = a.concat(" este es el string concatenado");
+        // trim
+        var l = "                 esta es una prueba            con el metodo trim";
+        var m = l.trim();
+        // charAt
+        var n = a.charAt(0);
+        // split
+        var p = "a,b,c,d";
+        var x = p.split(",");
+        
+
+
+        document.getElementById("demo").innerHTML = x[2];
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+
+        var persona = {
+            primer_nombre:"Francisco", // Elemento
+            segundo_nombre:"Javier",
+            id:640,
+            nombre_completo: function(){ // Metodo
+                return this.primer_nombre + " " + this.segundo_nombre;
+            }
+        };
+        
+        document.getElementById("demo").innerHTML = persona.nombre_completo();
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>

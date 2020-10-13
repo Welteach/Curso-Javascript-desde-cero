@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let y ambitos</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        
+        // Bloques
+        var a = 11;
+        {
+            var a = 6;
+        }
+        // aquí a vale 6
+
+        let b = 13;
+        {
+            let b = 6;
+        }
+        // aquí b vale 13 
+
+        var i = 5;
+
+        for(var i=0; i<10; i++){
+            //
+        }
+        // aquí i vale 9
+
+        let j = 5;
+
+        for(var j=0; j<10; j++){
+            //
+        }
+        // aquí j vale 5
+
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>

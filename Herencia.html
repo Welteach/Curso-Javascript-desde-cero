@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herencia en Javascript</title>
+</head>
+<body>
+
+<p id="p"></p>
+
+<script>
+
+    class Auto {
+
+        constructor(puertas, maxVelocidad){
+            this.ruedas = 4;
+            this.volante = 1;
+            this.asientos = 5;
+            this.puertas = puertas;
+            this.maxVelocidad = maxVelocidad;
+        }
+
+        velocidad(){
+            return "Mi máxima velocidad es " + this.maxVelocidad;
+        }
+
+        static tipo(){
+            return "Esta clase sirve para crear objetos autos.";
+        }
+
+    }   
+
+    class Audi extends Auto {
+
+        constructor(puertas, maxVelocidad, modelo){
+            super(puertas, maxVelocidad);
+            this.modelo = modelo;
+        }
+
+        presentacion(){
+            return "Este modelo " + this.modelo + " es el nuevo lanzamiento de Audi";
+        }
+
+        set set_Puertas(x){
+            this.puertas = x;
+        }
+
+        get get_Puertas(){
+            return this.puertas;
+        }
+
+    }
+
+    auto = new Audi(5, 220, "Prisma");
+    auto.set_Puertas = 6;
+
+    document.getElementById("p").innerHTML = auto.get_Puertas;
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+    // For
+    var arreglo = ["blanco","negro","azul","rojo"];
+    var texto = "";
+    var i;
+
+    for(i=0; i<arreglo.length; i++){
+        texto += arreglo[i] + "<br />";
+    }
+
+    // For in
+    var texto_dos = "";
+    var persona = {nombre:"Francisco",apellido:"Ocampo",edad:33};
+    
+    for(x in persona){
+        texto_dos += persona[x] + " ";
+    }
+
+    // For of
+    for(x of arreglo){
+        document.write(x + "<br />");
+    }
+
+    // While
+    i = 0;
+
+    while(i<10){
+        document.write("El número es " + i + "<br />");
+        i++;
+    }
+
+    // Do While
+    i = 0;
+
+    do{
+        document.write("El número es " + i + "<br />");
+        i++;
+    }while(i<10)
+    
+
+    document.getElementById("demo").innerHTML = texto_dos;  
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>

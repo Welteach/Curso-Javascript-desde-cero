@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+
+<p id="p"></p>
+<button id="btn">Click aquí</button>
+
+<script>
+    hola = function(){
+        return "Hola función tradicional";
+    }
+
+    holaArrow = (parametro) => "Hola arrow función" + parametro
+
+    funcionTradicional = function(){
+        document.getElementById("p").innerHTML += this 
+    }
+
+    funcionArrow = () => {
+        document.getElementById("p").innerHTML += this 
+    }
+
+    window.addEventListener("load", funcionArrow)
+    document.getElementById("btn").addEventListener("click", funcionArrow);
+
+    // document.getElementById("p").innerHTML = holaArrow(" como estas?");
+</script>
+</body>
+</html>

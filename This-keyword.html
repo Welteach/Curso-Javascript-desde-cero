@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This keyword</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        
+        // This hace referencia a un propio objeto
+        var persona = {
+            primer_nombre: "Francisco",
+            apellido: "Ocampo",
+            id: 1234,
+            nombre_completo: function(){
+                return this.primer_nombre + " " + this.apellido;
+            }
+        }
+
+
+        document.getElementById("demo").innerHTML = persona.nombre_completo();
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>

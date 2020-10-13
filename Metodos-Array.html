@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos Array</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        var arreglo = ["fuego","tierra","agua","aire"];
+        /*
+        function mi_funcion(){
+            return "planeta";
+        }*/
+
+        // var ordenar = arreglo.sort();
+        var arreglo_dos = new Array("fuego","tierra");
+/*
+        var text = "<ul>";
+        arreglo_dos.forEach(mi_funcion);
+        text += "</ul>";
+
+        function mi_funcion(valor){
+            text += "<li>" + valor + "</li>";
+        }*/
+        //var arreglo_pop = arreglo.pop();
+
+        //arreglo.push("arbol");
+        //arreglo.shift();
+        //arreglo.unshift("nuevo");
+        //arreglo.splice(2,0,"manzana");
+        //arreglo.splice(0,2);
+        //var con = arreglo_dos.concat(arreglo);
+        //var arreglo_slice = arreglo.slice(1);
+        var arreglo_slice = arreglo.slice(2,3);
+
+
+       
+
+
+        document.getElementById("demo").innerHTML = arreglo_slice;
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>

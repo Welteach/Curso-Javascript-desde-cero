@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        var email = "franciscogmail.com";
+        var email_dos = "welteach";
+
+        // If Else  // Else If
+        function validador(){
+            var f = email.search("@");
+            var g = email_dos.search(".com");
+
+            if((f != -1) && (g != -1)){
+                return "Es un email valido";
+            }else if(f != -1){
+                return "Falta el .com";
+            }else if(g != -1){
+                return "Falta el @";
+            }else{
+                return "Este email no es valido";
+            }
+        }
+
+        // Switch
+        var dia = "";
+
+        switch(new Date().getDay()){
+            case 0:
+                dia = "Domingo";
+                break;
+            case 1:
+                dia = "Lunes";
+                break;
+            case 2:
+                dia = "Martes";
+                break;
+            case 3:
+                dia = "Miércoles";
+                break;
+            case 4:
+                dia = "Jueves";
+                break;
+            case 5:
+                dia = "Viernes";
+                break;
+            default:
+                dia = "Sábado";
+                break;
+        }
+
+
+        document.getElementById("demo").innerHTML = dia;
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>
